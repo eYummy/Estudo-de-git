@@ -1,2 +1,2 @@
 # Estudo-de-git
-Algumas anotações de git e o livro de receita já publicado antes
+Algumas anotações de git e inicio de postagens constantes dos meus estudos 
