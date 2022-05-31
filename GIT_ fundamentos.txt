@@ -1,0 +1,66 @@
+	Como o GIT funciona por baixo dos panos?
+- SHA1
+- Objetos fundamentais
+- Sistema distribuido
+- Segurança
+
+		O que é a sigla SHA1?
+
+- A sigla SHA significa Secure Hash Algorithm
+
+- É um algoritimo de encriptação e quando encripta tal 
+gera um conjunto de characteres indentificadores de 40 digitos.
+
+		Objetos internos do GIT
+
+- Blob contem meta dados/SHA1 do arquivo 
+
+- Tree armazena os blobs, monta a estrutura deos arquivos, contem sha1 da arvore e
+do blob
+
+- Commit é o objeto mais importante de todos, ele junta todos e da sentido pro que 
+será feito, ele aponta para tudo
+
+		Chaves SSH e Tokens
+- Chave SSH é uma forma de estebelcer uma conexão cripitada, assinatura da maquina
+
+- Para criar uma chave usar o comando: "ssh-keygen -t ed25519 -C *email pessoal*"
+
+- Depois crie e passe para o Agent sua chave usando comando:
+"eval $(ssh-agent -s)"
+
+- Para passar use o comando:
+"ssh-add *sua chave*"
+
+		Comandos do GIT
+-ls- lista arquivos
+(-a) 
+
+
+-cd- mover entre pastas
+(..)
+
+
+-git init- cria um repositorio vazio
+
+-git config global user- configuração de conta git 
+             (local) 
+	     (--list)	      
+	
+-mkdir- cria uma pasta 
+
+-git add *- move um arquivo untracked para um staged
+-git commit -m "commit inicial"- cria uma commit
+
+-git status- mostra status dos arquivos :b
+ 
+
+		Empurrando pro GITHUB
+-Para passar suas commits para o GITHUB, use os comandos:
+-Git remote add origin *link da commit pega no GITHUB*
+-git remote -v mostra as suas commits feitas 
+git
+-Git push para empurrar a commit do repositorio local pro remoto
+
+		Resolvendo conflitos  
+
